@@ -75,3 +75,19 @@ update = function() {
 requestAnimationFrame(update);
 
 // just trying somthing
+div = document.getElementById("introduction");
+photo = document.querySelector("img");
+
+function toggleDiv() {
+  if (div.style.visibility == "hiden") {
+    // hidden content to show
+    div.style.visibility = "visible";
+    div.style.height = "auto";
+  } else {
+    // visible content to hide
+    div.style.visibility = "hidden";
+    div.style.height = "0";
+  }
+}
+
+// when click on the photo, run toggleDiv and photo goes up

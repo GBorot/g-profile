@@ -148,6 +148,14 @@ a:hover {
   margin: 20px 0px;
   text-align: center;
 }
+
+.img-center {
+  position: absolute;
+  top: 192%;
+  left: 50%;
+  transform: translate(-50%, 162%);
+}
+
 .img-circle {
   border-radius: 50%;
   width: 150px;
@@ -182,6 +190,10 @@ a:hover {
 }
 
 /* Design adjustments using id (1% design remaining) */
+#introduction {
+  display: none;
+}
+
 #introduction p {
   margin-bottom: 40px;
 }
