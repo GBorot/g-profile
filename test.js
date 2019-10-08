@@ -75,32 +75,22 @@ particlesJS("particles-js", {
 // requestAnimationFrame(update);
 
 // just trying somthing
-text = document.getElementById("introduction");
-photo = document.querySelector("img");
-backgroundDiv = document.querySelector(".card-white");
+const trigger = document.querySelector(".img-circle");
+const background = document.querySelector(".dropdownBackground");
+const photo = document.querySelector("img");
+const text = document.getElementById("introduction");
 
 function toggleText(e) {
-  const barckgroundText = backgroundDiv.getBoundingClientRect();
-  const backgroundPhoto = photo.getBoundingClientRect();
-
-  // const coords = {
-  //   height: barckgroundText.height,
-  //   width: barckgroundText.width,
-  //   width: barckgroundText.width,
-  //   top: barckgroundText.top - backgroundPhoto.top,
-  //   left: barckgroundText.left - backgroundPhoto.left
-  // };
-
-  text.classList.toggle("hidden");
   this.classList.toggle("move");
+}
 
-  // text.style.setProperty("width", `${coords.width}px`);
-  // text.style.setProperty("height", `${coords.height}px`);
-  // text.style.setProperty(
-  //   "transform",
-  //   `translate(${coords.left}px, ${coords.top}px)`
-  // );
+function insertContent(e) {
+  const location = document.querySelector(".dropdown");
+
+  location.innerHTML =
+    "<div class='card-white' id='introduction'><h1>Hello, I am Gautier 🤓</h1><p>After 10 years in the music industry I decided to change my life!🌍</p><p>Have a look to my booking artist web app !</p><a href='https://airfyre-arnolac.herokuapp.com/' class='btn-blue' target='_blank' >Discover Airfyre</a></div>";
 }
 
 // when click on the photo, run toggleDiv and photo goes up
-photo.addEventListener("click", toggleText);
+trigger.addEventListener("click", toggleText);
+trigger.addEventListener("click", insertContent);
