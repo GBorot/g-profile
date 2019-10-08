@@ -77,11 +77,29 @@ particlesJS("particles-js", {
 // just trying somthing
 text = document.getElementById("introduction");
 photo = document.querySelector("img");
+backgroundDiv = document.querySelector(".card-white");
 
 function toggleText(e) {
-  console.log("hello");
+  const barckgroundText = backgroundDiv.getBoundingClientRect();
+  const backgroundPhoto = photo.getBoundingClientRect();
+
+  // const coords = {
+  //   height: barckgroundText.height,
+  //   width: barckgroundText.width,
+  //   width: barckgroundText.width,
+  //   top: barckgroundText.top - backgroundPhoto.top,
+  //   left: barckgroundText.left - backgroundPhoto.left
+  // };
+
   text.classList.toggle("hidden");
   this.classList.toggle("move");
+
+  // text.style.setProperty("width", `${coords.width}px`);
+  // text.style.setProperty("height", `${coords.height}px`);
+  // text.style.setProperty(
+  //   "transform",
+  //   `translate(${coords.left}px, ${coords.top}px)`
+  // );
 }
 
 // when click on the photo, run toggleDiv and photo goes up

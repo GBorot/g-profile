@@ -201,8 +201,8 @@ a:hover {
   display: none;
 }
 
-div,
-img {
+.move,
+.hidden {
   transition: transform 2s;
 }
 
