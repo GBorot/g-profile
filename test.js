@@ -80,7 +80,7 @@ photo = document.querySelector("img");
 
 function toggleText(e) {
   console.log("hello");
-  text.classList.toggle("active");
+  text.classList.toggle("hidden");
   this.classList.toggle("move");
 }
 

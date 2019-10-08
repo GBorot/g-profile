@@ -191,15 +191,24 @@ a:hover {
 
 /* Design adjustments using id (1% design remaining) */
 #introduction {
-  display: none;
 }
 
 #introduction p {
   margin-bottom: 40px;
 }
 
-.active {
-  display: block;
+.hidden {
+  display: none;
 }
 
+div,
+img {
+  transition: transform 2s;
+}
+
+.move {
+  transform: translateY(20%);
+  transform: translateX(-50%);
+  /* transition: transform 2s; */
+}
 /* just trying something */
