@@ -198,4 +198,8 @@ a:hover {
   margin-bottom: 40px;
 }
 
+.active {
+  display: block;
+}
+
 /* just trying something */

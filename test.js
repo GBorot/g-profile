@@ -56,38 +56,33 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
-var count_particles, stats, update;
-stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
+// var count_particles, stats, update;
+// stats = new Stats();
+// stats.setMode(0);
+// stats.domElement.style.position = "absolute";
+// stats.domElement.style.left = "0px";
+// stats.domElement.style.top = "0px";
+// document.body.appendChild(stats.domElement);
+// count_particles = document.querySelector(".js-count-particles");
+// update = function() {
+//   stats.begin();
+//   stats.end();
+//   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//   }
+//   requestAnimationFrame(update);
+// };
+// requestAnimationFrame(update);
 
 // just trying somthing
-div = document.getElementById("introduction");
+text = document.getElementById("introduction");
 photo = document.querySelector("img");
 
-function toggleDiv() {
-  if (div.style.visibility == "hiden") {
-    // hidden content to show
-    div.style.visibility = "visible";
-    div.style.height = "auto";
-  } else {
-    // visible content to hide
-    div.style.visibility = "hidden";
-    div.style.height = "0";
-  }
+function toggleText(e) {
+  console.log("hello");
+  text.classList.toggle("active");
+  this.classList.toggle("move");
 }
 
 // when click on the photo, run toggleDiv and photo goes up
+photo.addEventListener("click", toggleText);
