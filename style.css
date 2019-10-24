@@ -197,7 +197,7 @@ a:hover {
 
 /*  */
 .dropdown {
-  opacity: 1;
+  /* opacity: 1; */
   position: absolute;
   /* overflow: hidden; */
   padding: 20px;
@@ -221,3 +221,10 @@ a:hover {
   /* transition: transform 2s; */
 }
 /* just trying something */
+
+.transition {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}

@@ -80,18 +80,30 @@ const background = document.querySelector(".dropdownBackground");
 const photo = document.querySelector("img");
 const text = document.getElementById("introduction");
 
-function toggleText(e) {
-  this.classList.toggle("move");
+function addMove(e) {
+  this.classList.add("move");
   setTimeout(insertContent, 2000);
+
+  // const text = document.getElementById("introduction");
+}
+
+function removeMove(e) {
+  // remove my content :
+  // const location = document.querySelector(".dropdown");
+
+  // location.innerHTML = "";
+
+  this.classList.remove("move");
 }
 
 function insertContent(e) {
   const location = document.querySelector(".dropdown");
 
   location.innerHTML =
-    "<div class='card-white' id='introduction'><h1>Hello, I am Gautier 🤓</h1><p>After 10 years in the music industry I decided to change my life!🌍</p><p>Have a look to my booking artist web app !</p><a href='https://airfyre-arnolac.herokuapp.com/' class='btn-blue' target='_blank' >Discover Airfyre</a></div>";
+    "<div class='card-white transition' id='introduction'><h1>Hello, I am Gautier 🤓</h1><p>After 10 years in the music industry I decided to change my life!🌍</p><p>Have a look to my booking artist web app !</p><a href='https://airfyre-arnolac.herokuapp.com/' class='btn-blue' target='_blank' >Discover Airfyre</a></div>";
 }
 
 // when click on the photo, run toggleDiv and photo goes up
-trigger.addEventListener("click", toggleText);
+trigger.addEventListener("click", addMove);
+// trigger.addEventListener("click", removeMove);
 // trigger.addEventListener("click", insertContent);
