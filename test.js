@@ -82,6 +82,7 @@ const text = document.getElementById("introduction");
 
 function toggleText(e) {
   this.classList.toggle("move");
+  setTimeout(insertContent, 2000);
 }
 
 function insertContent(e) {
@@ -93,4 +94,4 @@ function insertContent(e) {
 
 // when click on the photo, run toggleDiv and photo goes up
 trigger.addEventListener("click", toggleText);
-trigger.addEventListener("click", insertContent);
+// trigger.addEventListener("click", insertContent);
