@@ -20,7 +20,7 @@ height: 100vh;
 
 section.background {
   box-sizing: border-box;
-  position: relative;
+  position: sticky;
   z-index: 100;
   width: 50%;
   margin: 50px auto;
