@@ -171,5 +171,8 @@ DEPENDENCIES
   wdm (~> 0.1)
   webpacker (~> 4.x)
 
+RUBY VERSION
+   ruby 2.5.7p206
+
 BUNDLED WITH
    2.0.2
