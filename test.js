@@ -78,29 +78,21 @@ particlesJS("particles-js", {
 const trigger = document.querySelector(".img-circle");
 const background = document.querySelector(".dropdownBackground");
 const photo = document.querySelector("img");
-const text = document.getElementById("introduction");
+const textArea = document.getElementById("introduction");
+
+// setTimeout(insertContent, 2000);
+function displayDiv() {
+  textArea.style.display = "block";
+}
 
 function addMove(e) {
   this.classList.add("move");
-  setTimeout(insertContent, 2000);
+  console.log(textArea);
 
-  // const text = document.getElementById("introduction");
-}
-
-function removeMove(e) {
-  // remove my content :
-  // const location = document.querySelector(".dropdown");
-
-  // location.innerHTML = "";
-
-  this.classList.remove("move");
-}
-
-function insertContent(e) {
-  const location = document.querySelector(".dropdown");
-
-  location.innerHTML =
-    "<div class='card-white transition' id='introduction'><h1>Hello, I am Gautier 🤓</h1><p>After 10 years in the music industry I decided to change my life!🌍</p><p>Have a look to my booking artist web app !</p><a href='https://airfyre-arnolac.herokuapp.com/' class='btn-blue' target='_blank' >Discover Airfyre</a></div>";
+  setTimeout(displayDiv, 2000);
+  // textArea.addEventListener("afterprint", () => {
+  //   textArea.style.display = "block";
+  // });
 }
 
 // when click on the photo, run toggleDiv and photo goes up
