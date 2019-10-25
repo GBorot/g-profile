@@ -8,6 +8,11 @@ end
 # Live reload in development
 activate :livereload
 
+# sets of the wesite
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

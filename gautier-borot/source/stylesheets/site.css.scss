@@ -1,24 +1,289 @@
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  /* background: #f7f9fc; */
+  /* background: transparent; */
+  color: #575f7d;
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: lighter;
+  margin: 0;
+  height: 100vh;
+}
+/*
+body,
+canvas {
+margin: 0;
+overflow: hidden;
+background-color: black;
+/* width: 100%;
+height: 100vh;
+} */
+
+section.background {
+  box-sizing: border-box;
+  position: sticky;
+  z-index: 100;
+  width: 50%;
+  margin: 50px auto;
 }
 
-a {
-  color: rgba(#000, 0.7);
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+#particles-js {
+  background-color: #1e1b1b;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+/* end of the new canvas */
+
+/* .canvas-bg {
+background: -webkit-canvas(animation) no-repeat 50% 50%;
+} */
+
+h1,
+h2,
+h3,
+p {
+  color: #eee;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+h2 {
+  color: #7ece90;
+  font-size: 20px;
+  font-weight: lighter;
+  font-weight: 500;
+}
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #eee;
+  font-weight: 600;
+  font-size: 16px;
+}
+a:hover {
+  color: black;
+}
+
+/* Custom design with class (99% of your design) */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.z-10 {
+  z-index: 10;
+}
+
+.card-white {
+  /* background-color: white; */
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid red; */
+  border-radius: 4px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  /* margin: 0 auto; */
+}
+
+.img-center {
+  position: absolute;
+  margin: auto;
+
+  top: 192%;
+  left: 50%;
+  transform: translate(-50%, 162%);
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 150px;
+  object-fit: cover;
+  height: 150px;
+  cursor: pointer;
+}
+.btn-blue {
+  background-color: #585f7b;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.btn-blue:hover {
+  background-color: white;
+  color: #585f7b;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+  color: black;
+}
+
+/* Design adjustments using id (1% design remaining) */
+
+#introduction p {
+  margin-bottom: 40px;
+}
+
+/*  */
+.dropdown {
+  position: absolute;
+  padding: 20px;
+  top: -20px;
+  border-radius: 2px;
+  transform: translateY(200px);
+  width: 100%;
+  text-align: center;
+}
+
+.move,
+.dropdown,
+.hidden {
+  transition: transform 1s;
+}
+
+.move {
+  transform: translateY(15%);
+  transform: translateX(-50%);
+  /* transition: transform 2s; */
+}
+/* just trying something */
+
+#introduction {
+  display: none;
+  margin: auto;
+  /* opacity: 1; */
+}
+
+.fade {
+  -webkit-animation: fadein 800ms; /* Safari, Chrome and Opera > 1800m.1 */
+  -moz-animation: fadein 800ms; /* Firefox < 16 */
+  -ms-animation: fadein 800ms; /* Internet Explorer */
+  -o-animation: fadein 800ms; /* Opera < 1800m.1 */
+  animation: fadein 800ms;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
