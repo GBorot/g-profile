@@ -154,6 +154,8 @@ a:hover {
 
 .img-center {
   position: absolute;
+  margin: auto;
+
   top: 192%;
   left: 50%;
   transform: translate(-50%, 162%);
@@ -213,11 +215,11 @@ a:hover {
 .move,
 .dropdown,
 .hidden {
-  transition: transform 2s;
+  transition: transform 1s;
 }
 
 .move {
-  transform: translateY(20%);
+  transform: translateY(15%);
   transform: translateX(-50%);
   /* transition: transform 2s; */
 }
@@ -230,11 +232,11 @@ a:hover {
 }
 
 .fade {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+  -webkit-animation: fadein 800ms; /* Safari, Chrome and Opera > 1800m.1 */
+  -moz-animation: fadein 800ms; /* Firefox < 16 */
+  -ms-animation: fadein 800ms; /* Internet Explorer */
+  -o-animation: fadein 800ms; /* Opera < 1800m.1 */
+  animation: fadein 800ms;
 }
 
 @keyframes fadein {
