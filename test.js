@@ -82,7 +82,7 @@ const textArea = document.getElementById("introduction");
 
 // setTimeout(insertContent, 2000);
 function displayDiv() {
-  textArea.style.display = "block";
+  textArea.style.display = "inline-block";
 }
 
 function addMove(e) {
