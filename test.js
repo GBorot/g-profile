@@ -1,7 +1,7 @@
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 400,
+      value: 500,
       density: { enable: true, value_area: 1843.9238699953512 }
     },
     color: { value: "#d20202" },
@@ -89,7 +89,7 @@ function addMove(e) {
   this.classList.add("move");
   console.log(textArea);
 
-  setTimeout(displayDiv, 2000);
+  setTimeout(displayDiv, 1000);
 }
 
 // when click on the photo, run toggleDiv and photo goes up
