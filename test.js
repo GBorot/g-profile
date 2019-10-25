@@ -1,7 +1,7 @@
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 236,
+      value: 400,
       density: { enable: true, value_area: 1843.9238699953512 }
     },
     color: { value: "#d20202" },
@@ -90,12 +90,7 @@ function addMove(e) {
   console.log(textArea);
 
   setTimeout(displayDiv, 2000);
-  // textArea.addEventListener("afterprint", () => {
-  //   textArea.style.display = "block";
-  // });
 }
 
 // when click on the photo, run toggleDiv and photo goes up
 trigger.addEventListener("click", addMove);
-// trigger.addEventListener("click", removeMove);
-// trigger.addEventListener("click", insertContent);
