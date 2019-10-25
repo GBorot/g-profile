@@ -8,12 +8,12 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="./javascripts/site.js"></script>
+    <%#= javascript_include_tag "site" %>
   </head>
   <body>
     <%= yield %>
     <!-- just trying something -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- <script type="text/javascript" src="site.js"></script> -->
   </body>
 </html>

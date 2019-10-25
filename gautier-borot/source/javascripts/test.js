@@ -1,7 +1,3 @@
-// // require('test.js');
-
-
-
 // particlesJS("particles-js", {
 //   particles: {
 //     number: {
@@ -64,23 +60,41 @@
 
 
 
-// // // var count_particles, stats, update;
-// // // stats = new Stats();
-// // // stats.setMode(0);
-// // // stats.domElement.style.position = "absolute";
-// // // stats.domElement.style.left = "0px";
-// // // stats.domElement.style.top = "0px";
-// // // document.body.appendChild(stats.domElement);
-// // // count_particles = document.querySelector(".js-count-particles");
-// // // update = function() {
-// // //   stats.begin();
-// // //   stats.end();
-// // //   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-// // //     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-// // //   }
-// // //   requestAnimationFrame(update);
-// // // };
-// // // requestAnimationFrame(update);
+// // var count_particles, stats, update;
+// // stats = new Stats();
+// // stats.setMode(0);
+// // stats.domElement.style.position = "absolute";
+// // stats.domElement.style.left = "0px";
+// // stats.domElement.style.top = "0px";
+// // document.body.appendChild(stats.domElement);
+// // count_particles = document.querySelector(".js-count-particles");
+// // update = function() {
+// //   stats.begin();
+// //   stats.end();
+// //   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+// //     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+// //   }
+// //   requestAnimationFrame(update);
+// // };
+// // requestAnimationFrame(update);
 
-// // // just trying somthing
+// // just trying somthing
+// const trigger = document.querySelector(".img-circle");
+// const background = document.querySelector(".dropdownBackground");
+// const photo = document.querySelector("img");
+// const textArea = document.getElementById("introduction");
 
+// // setTimeout(insertContent, 2000);
+// function displayDiv() {
+//   textArea.style.display = "inline-block";
+// }
+
+// function addMove(e) {
+//   this.classList.add("move");
+//   console.log(textArea);
+
+//   setTimeout(displayDiv, 1000);
+// }
+
+// // when click on the photo, run toggleDiv and photo goes up
+// trigger.addEventListener("click", addMove);
