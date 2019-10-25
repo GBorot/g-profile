@@ -164,6 +164,7 @@ a:hover {
   width: 150px;
   object-fit: cover;
   height: 150px;
+  cursor: pointer;
 }
 .btn-blue {
   background-color: #585f7b;
