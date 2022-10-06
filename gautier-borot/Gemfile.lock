@@ -1,6 +1,11 @@
 GEM
-  remote: https://rubygems.org/
   remote: https://rails-assets.org/
+  specs:
+    rails-assets-bootstrap (1.0.0)
+    rails-assets-jquery (2.1.1)
+
+GEM
+  remote: https://rubygems.org/
   specs:
     actionpack (5.0.7.2)
       actionview (= 5.0.7.2)
@@ -20,8 +25,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (9.7.0)
       execjs
     backports (3.15.0)
@@ -113,7 +118,7 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.18.0)
-    public_suffix (4.0.1)
+    public_suffix (5.0.0)
     rack (2.0.7)
     rack-livereload (0.3.17)
       rack
@@ -121,8 +126,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails-assets-bootstrap (1.0.0)
-    rails-assets-jquery (2.1.1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
